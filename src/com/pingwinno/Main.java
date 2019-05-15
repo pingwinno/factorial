@@ -10,8 +10,10 @@ public class Main {
         for (int i = 1; i <= n; i++) {
             factorial = factorial.multiply(BigInteger.valueOf(i));
         }
+        //Split factorial string to digits array
         String[] digits = factorial.toString().split("");
         int result = 0;
+        //Parse digits to int and calculate sum of it
         for (String digit : digits) {
             result = result + Integer.valueOf(digit);
         }
