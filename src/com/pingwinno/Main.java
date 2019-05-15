@@ -11,7 +11,7 @@ public class Main {
             factorial = factorial.multiply(BigInteger.valueOf(i));
         }
         //Split factorial string to digits array
-        String[] digits = factorial.toString().split("");
+        String[] digits = factorial.toString().replaceAll("0","").split("");
         int result = 0;
         //Parse digits to int and calculate sum of it
         for (String digit : digits) {
