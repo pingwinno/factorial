@@ -4,7 +4,7 @@ import java.math.BigInteger;
 //This app calculate sum of digits in the number 100!
 public class Main {
     static int calculateFactorial(int n) {
-        //Use BigInteger to fit factorial value
+        //BigInteger used to fit factorial value
         BigInteger factorial = BigInteger.valueOf(n);
         //Calculate factorial
         for (int i = 1; i <= n; i++) {
